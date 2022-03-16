@@ -101,13 +101,13 @@ class RegistrUserView(CreateAPIView):
         email = serializer.data['email']
         username = serializer.data['username']
         user, _ = User.objects.get_or_create(email=email, username=username)
-        Createandsendregcode(user, email)
+        createandsendregcode(user, email)
         data['email'] = request.data['email']
         data['username'] = request.data['username']
         return Response(data)
 
 
-def Createandsendregcode(user, user_mail):
+def createandsendregcode(user, user_mail):
     reg_code = default_token_generator.make_token(user)
     code = ConfirmCodes(reg_code=reg_code, owner=user)
     code.save()
