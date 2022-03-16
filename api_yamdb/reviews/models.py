@@ -1,9 +1,10 @@
+import datetime
+
 from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
                                         PermissionsMixin)
 from django.contrib.auth.validators import UnicodeUsernameValidator
-from django.db import models
-import datetime
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db import models
 
 
 class MyUserManager(BaseUserManager):
