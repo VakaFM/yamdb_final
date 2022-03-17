@@ -5,12 +5,12 @@ from datetime import timedelta
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
+# SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["130.193.49.126", "vansitniko.hopto.org", "localhost", "127.0.0.1", "[::1]", "testserver"]
+ALLOWED_HOSTS = ["130.193.49.126", "vansitniko.hopto.org", "127.0.0.1", "[::1]", "testserver"]
 
 
 # Application definition

@@ -66,3 +66,6 @@ POSTGRES_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
 ``` 
+Об авторе
+
+Иван Ситников студент курса Python-разработчик в Яндекс.Практикум.
