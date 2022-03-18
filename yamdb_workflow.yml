@@ -47,6 +47,7 @@ jobs:
           push: true
           tags: vakafm/yamdb_final:latest
           file: api_yamdb/Dockerfile
+          context: api_yamdb
   
   deploy:
     runs-on: ubuntu-latest
