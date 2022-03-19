@@ -14,6 +14,9 @@ services:
     env_file:
       - ./.env
   web:
+    build:
+      context: ../
+      dockerfile: api_yamdb/Dockerfile
     image: vakafm/yamdb_final:latest
     restart: always
     volumes:
