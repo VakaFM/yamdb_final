@@ -45,9 +45,9 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: vakafm/yamdb_final:latest
+          tags: vakafm/yamdb_aymdb:latest
           file: api_yamdb/Dockerfile
-          context: api_final
+          context: api_yamdb
   
   deploy:
     runs-on: ubuntu-latest
